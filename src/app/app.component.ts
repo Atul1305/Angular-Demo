@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pNext-UI';
+  title = 'pNext App';
+  myName = 'Atul Sharma';
+  getName(name: any){
+    alert(name)
+  }
+
+  myEvent(evt: any){
+    console.warn(evt)
+  }
 }
