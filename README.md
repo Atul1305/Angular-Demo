@@ -1,6 +1,11 @@
 # PNextUI
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
+
+# References
+Course for beginner: https://www.youtube.com/watch?v=9CVZks6U0ZY&list=PL8p2I9GklV45JZerGMvw5JVxPSxCg8VPv&index=1
+
+
+# Useful Commands For Angular
 
 ## Development server
 
