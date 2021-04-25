@@ -8,11 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'pNext App';
   myName = 'Atul Sharma';
+  currentVal  = '';
   getName(name: any){
     alert(name)
   }
 
   myEvent(evt: any){
     console.warn(evt)
+  }
+
+  getValue(val: any){
+    console.warn(val);
+    this.currentVal = val;
   }
 }

@@ -11,3 +11,9 @@
   style="background-color: skyblue;">
   mouse event
 </h1>
+
+<input type="text" #box1/>
+
+<button (click)="getValue(box1.value)">Get Value</button>
+
+<h2>{{currentVal}}</h2>
