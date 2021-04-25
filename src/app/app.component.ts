@@ -9,6 +9,8 @@ export class AppComponent {
   title = 'pNext App';
   myName = 'Atul Sharma';
   currentVal  = '';
+  diabledBox = true;
+  
   getName(name: any){
     alert(name)
   }
@@ -20,5 +22,9 @@ export class AppComponent {
   getValue(val: any){
     console.warn(val);
     this.currentVal = val;
+  }
+
+  enableBox(){
+    this.diabledBox = false;
   }
 }

@@ -17,3 +17,11 @@
 <button (click)="getValue(box1.value)">Get Value</button>
 
 <h2>{{currentVal}}</h2>
+<br><br>
+
+<input type="text" #box3 [disabled]=diabledBox [value]="myName"/>
+<br><br>
+<input type="text" #box4 disabled={{diabledBox}} value={{myName}}/>
+<br><br>
+<button (click)="enableBox()">Enable Text Box</button>
+
