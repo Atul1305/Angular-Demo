@@ -8,7 +8,7 @@
 
 <h1 
   (mouseover)="myEvent('mouseover')"
-  style="background-color: skyblue;">
+  style="background-color: rgb(139, 216, 247);">
   mouse event
 </h1>
 
@@ -24,4 +24,12 @@
 <input type="text" #box4 disabled={{diabledBox}} value={{myName}}/>
 <br><br>
 <button (click)="enableBox()">Enable Text Box</button>
+<br><br>
+
+<h1 *ngIf="show else elseBlock">
+  if Block
+</h1>
+<ng-template #elseBlock>
+  <h1>else block</h1>
+</ng-template>
 

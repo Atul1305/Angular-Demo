@@ -10,7 +10,8 @@ export class AppComponent {
   myName = 'Atul Sharma';
   currentVal  = '';
   diabledBox = true;
-  
+  show = true;
+
   getName(name: any){
     alert(name)
   }
@@ -27,4 +28,6 @@ export class AppComponent {
   enableBox(){
     this.diabledBox = false;
   }
+
+
 }
