@@ -89,4 +89,13 @@
 <h3 [style.color]="color">Heading 3</h3>
 <h3 [style.color]="err?'red':'green'">Conditional Style</h3>
 <button (click)="updateColor()">Update Color</button>
+
+<br>
+<h2 [ngClass]="'separator'">Add bootstrap in Angular</h2>
+<p>
+  <ngb-alert [dismissible]="false">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  </ngb-alert>
+</p>
+
 <app-footer></app-footer>
