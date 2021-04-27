@@ -44,4 +44,7 @@ export class AppComponent {
     this.diabledBox = false;
   }
 
+  getFormValues(form: any){
+    console.warn(form);
+  }
 }

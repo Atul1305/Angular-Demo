@@ -68,3 +68,15 @@
     <td>{{item.age}}</td>
   </tr>
 </table>
+
+<br>
+<h2 [ngClass]="'separator'">Simple Form in Angular</h2>
+<form #simpleForm="ngForm" (ngSubmit)="getFormValues(simpleForm.value)">
+  <input type="text" ngModel name="user" placeholder="Enter user name">
+  <br><br>
+  <input type="text" ngModel name="age" placeholder="Enter user age">
+  <br><br>
+  <input type="text" ngModel name="address" placeholder="Enter user address">
+  <br><br>
+  <button>Get User Values</button>
+</form>
