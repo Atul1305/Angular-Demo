@@ -11,7 +11,9 @@ export class AppComponent {
   currentVal  = '';
   diabledBox = true;
   show = true;
-  color = "green";
+  color = "orange";
+  err = true;
+
   data = [
     {
       name:'Atul',
@@ -46,5 +48,10 @@ export class AppComponent {
 
   getFormValues(form: any){
     console.warn(form);
+  }
+
+  updateColor(){
+    this.color = 'blue';
+    this.err = !this.err;
   }
 }

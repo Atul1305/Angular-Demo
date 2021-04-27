@@ -82,4 +82,11 @@
   <button>Get User Values</button>
 </form>
 
+<br>
+<h2 [ngClass]="'separator'">Style binding in Angular</h2>
+<h3 style="color: rebeccapurple;">Heading 1</h3>
+<h3 [style.color]="'grey'">Heading 2</h3>
+<h3 [style.color]="color">Heading 3</h3>
+<h3 [style.color]="err?'red':'green'">Conditional Style</h3>
+<button (click)="updateColor()">Update Color</button>
 <app-footer></app-footer>
