@@ -11,6 +11,7 @@ export class AppComponent {
   currentVal  = '';
   diabledBox = true;
   show = true;
+  color = "green";
 
   getName(name: any){
     alert(name)
@@ -28,6 +29,5 @@ export class AppComponent {
   enableBox(){
     this.diabledBox = false;
   }
-
-
+  
 }

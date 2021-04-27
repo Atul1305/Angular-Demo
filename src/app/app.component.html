@@ -32,4 +32,24 @@
 <ng-template #elseBlock>
   <h1>else block</h1>
 </ng-template>
+<br> 
+
+<h2>Switch case in Angular</h2>
+<div [ngSwitch]="color">
+  <h2 style="color: red;" *ngSwitchCase="'red'">
+    Red Color.
+  </h2>
+  <h2 style="color: green;" *ngSwitchCase="'green'">
+    green Color.
+  </h2>
+  <h2 style="color: blue;" *ngSwitchCase="'blue'">
+    blue Color.
+  </h2>
+  <h2 style="color: yellow;" *ngSwitchCase="'yellow'">
+    yellow Color.
+  </h2>
+  <h2 style="color: grey;" *ngSwitchDefault>
+    Default Color.
+  </h2>
+</div>
 
