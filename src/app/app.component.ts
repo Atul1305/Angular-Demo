@@ -12,6 +12,20 @@ export class AppComponent {
   diabledBox = true;
   show = true;
   color = "green";
+  data = [
+    {
+      name:'Atul',
+      age: 28
+    },
+    {
+      name:'Shivam',
+      age: 29
+    },
+    {
+      name:'Vidya',
+      age: 25
+    }
+  ];
 
   getName(name: any){
     alert(name)
@@ -29,5 +43,5 @@ export class AppComponent {
   enableBox(){
     this.diabledBox = false;
   }
-  
+
 }

@@ -6,19 +6,21 @@
 <br> <br>
 <input type="text" #box (blur)="myEvent('blur event')"/>
 
+<h2 [ngClass]="'separator'">Mouse Event in Angular</h2>
 <h1 
   (mouseover)="myEvent('mouseover')"
   style="background-color: rgb(139, 216, 247);">
-  mouse event
+  Do a hover.
 </h1>
 
+<h2 [ngClass]="'separator'">Get Value of text on button click in Angular</h2>
 <input type="text" #box1/>
-
 <button (click)="getValue(box1.value)">Get Value</button>
 
 <h2>{{currentVal}}</h2>
 <br><br>
 
+<h2 [ngClass]="'separator'">Enable/Disable in Angular</h2>
 <input type="text" #box3 [disabled]=diabledBox [value]="myName"/>
 <br><br>
 <input type="text" #box4 disabled={{diabledBox}} value={{myName}}/>
@@ -26,6 +28,7 @@
 <button (click)="enableBox()">Enable Text Box</button>
 <br><br>
 
+<h2 [ngClass]="'separator'">If Else in Angular</h2>
 <h1 *ngIf="show else elseBlock">
   if Block
 </h1>
@@ -34,7 +37,7 @@
 </ng-template>
 <br> 
 
-<h2>Switch case in Angular</h2>
+<h2 [ngClass]="'separator'">Switch case in Angular</h2>
 <div [ngSwitch]="color">
   <h2 style="color: red;" *ngSwitchCase="'red'">
     Red Color.
@@ -52,4 +55,16 @@
     Default Color.
   </h2>
 </div>
+<br>
 
+<h2 [ngClass]="'separator'">For loop in Angular</h2>
+<table border="1">
+  <tr>
+    <td>Name</td>
+    <td>Age</td>
+  </tr>
+  <tr *ngFor="let item of data">
+    <td>{{item.name}}</td>
+    <td>{{item.age}}</td>
+  </tr>
+</table>
