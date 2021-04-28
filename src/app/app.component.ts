@@ -13,6 +13,7 @@ export class AppComponent {
   show = true;
   color = "orange";
   err = true;
+  parentData = "Mike";
 
   data = [
     {
