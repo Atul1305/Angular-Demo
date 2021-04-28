@@ -14,6 +14,8 @@ export class AppComponent {
   color = "orange";
   err = true;
   parentData = "Mike";
+  video21Url = 'https://www.youtube.com/watch?v=hJf7w-8_lJc&list=PL8p2I9GklV45JZerGMvw5JVxPSxCg8VPv&index=21';
+  video22Url = 'https://www.youtube.com/watch?v=MmSoM19qUH8&list=PL8p2I9GklV45JZerGMvw5JVxP';
 
   data = [
     {
