@@ -20,6 +20,7 @@ export class AppComponent {
   video24Url = 'https://www.youtube.com/watch?v=yymtGNGyhuM&list=PL8p2I9GklV45JZerGMvw5JVxPSxCg8VPv&index=24';
   video25Url = 'https://www.youtube.com/watch?v=clpgSBh6t2Q&list=PL8p2I9GklV45JZerGMvw5JVxPSxCg8VPv&index=25';
   
+
   data = [
     {
       name:'Atul',
