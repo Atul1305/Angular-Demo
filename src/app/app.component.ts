@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {UserServiceService} from './user-service.service';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,10 @@ export class AppComponent {
   video23Url = 'https://www.youtube.com/watch?v=-DsCFwPuC_k&list=PL8p2I9GklV45JZerGMvw5JVxPSxCg8VPv&index=23';
   video24Url = 'https://www.youtube.com/watch?v=yymtGNGyhuM&list=PL8p2I9GklV45JZerGMvw5JVxPSxCg8VPv&index=24';
   video25Url = 'https://www.youtube.com/watch?v=clpgSBh6t2Q&list=PL8p2I9GklV45JZerGMvw5JVxPSxCg8VPv&index=25';
-  
+  serviceName = '';
+  constructor(private userService:UserServiceService){
+    this.serviceName = this.userService.getData().name;
+  }
 
   data = [
     {
